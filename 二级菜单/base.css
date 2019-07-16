@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topMenu{
+    height: 50px;
+    width: 100%;
+    z-index: 1;
+    background-color: #000;
+}
+
+.mainContent{
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    z-index:-1;
+
+    /* 设置宽度为100% */
+    width: 100%;
+    height: clac(100% - 50px);
+    background-color: #eee;
+}
+
+/* 设置topMenu的ul */
+.topMenu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    background-color: #000;
+    text-align: center;
+    width: 150px;
+    border-right: 2px solid #fff;
+}
+
+/* 设置a的属性 */
+a{
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.dropdown-content{
+    display: none;
+}
+
+/* 当鼠标放在<li>标签上时 */
+li.dropdown:hover ul{
+    display: list-item;
+}
+
+/* 设置样式反差 */
+div.topMenu li:hover{
+    background-color: #e4e4e4;
+}
+
+li:hover>a{
+    color: #000;
+}
+
+/* 给二级标题设置样式 */
+ul.dropdown-content li{
+    border-right: transparent;
+    width: 200px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* 给每一个垂直列表的第一个标项加入蓝色的顶部 */
+
+ul.dropdown-content li:first-of-type{
+    border-top: 2px solid blue;
+}
